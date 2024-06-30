@@ -50,8 +50,8 @@ task:
       - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Sync Completed!"
 
   Build_script:
-      - export BUILD_USERNAME="Gigantic"
-      - export BUILD_HOSTNAME="Geist"
+      - export BUILD_USERNAME="Jigoku"
+      - export BUILD_HOSTNAME="Berseker"
       - export KBUILD_BUILD_USER="Gigantic"
       - export KBUILD_BUILD_HOST="Geist"
       #- export WITH_GAPPS=true
