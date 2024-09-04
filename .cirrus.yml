@@ -52,8 +52,8 @@ task:
   Build_script:
       - export BUILD_USERNAME="Gigantic"
       - export BUILD_HOSTNAME="Geist"
-      - export KBUILD_BUILD_USER="Gigantic"
-      - export KBUILD_BUILD_HOST="Geist"
+      - export KBUILD_BUILD_USER="Jigoku"
+      - export KBUILD_BUILD_HOST="Berseker"
       #- export WITH_GAPPS=true
       - sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
       - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Build QASSA for surya Started!"
