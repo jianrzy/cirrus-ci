@@ -7,7 +7,7 @@ env:
     make: make qassa
 
 task:
-  name: "Setting Up, Sync, Build, and Upload..."
+  name: "Setting Up, Sync, Build, and Upload"
   timeout_in: 480m
   container:
       image: inok2341/anu:latest
