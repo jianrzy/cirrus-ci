@@ -56,7 +56,7 @@ task:
       - export KBUILD_BUILD_HOST="Berseker"
       #- export WITH_GAPPS=true
       - sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
-      - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Build QASSA for surya Started!"
+      - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Build QASSA for surya started!"
       - ./collect.sh
       #- ./final.sh
       - curl -s https://api.telegram.org/$tokentl/sendMessage -d chat_id=$idtl -d text="Build $(cd ~/rom/out/target/product/surya/ && ls qassa*.zip) Completed!"
