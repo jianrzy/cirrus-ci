@@ -42,7 +42,7 @@ task:
       - sudo chmod a+rx /usr/local/bin/repoo
       - repo init -q --no-repo-verify --depth=1 -u https://github.com/keepQASSA/manifest.git -b Q-rzy -g default,-mips,-darwin,-notdefault
       - git clone --depth 1 https://github.com/jianrzy/local_manifest.git -b qassa_surya .repo/local_manifests
-      - sudo apt-get update && && sudo apt upgrade -y && sudo apt-get install -y git-lfs && git lfs install
+      - sudo apt-get update && sudo apt upgrade -y && sudo apt-get install -y git-lfs && git lfs install
       - rm -rf .repo/repo && git clone https://gerrit.googlesource.com/git-repo .repo/repo
       - sed -i 's|ssh://git@github.com|https://github.com|g' .repo/manifests/snippets/qassa.xml
       - repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j8
